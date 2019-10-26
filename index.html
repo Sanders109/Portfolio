@@ -4,9 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style2.css">
   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
   <title>Jacks Website</title>
+
 </head>
 <body>
   <header class="showcase">
@@ -24,21 +25,55 @@
   <section class="links">
     <div class="container grid-3 center">
       <div>
-        <i class="far fa-file" style="font-size:50px;"></i>
-        <h3>Resume</h3>
+        <div>
+          <i class="far fa-file" style="font-size:50px;"></i>
+        </div>
+        <div>
+          <a href="documents/My_CV.pdf" download="JackSandersCV" class="link"><h3>Résumé</h3></a>
+        </div>
       </div>
       <div>
         <i class="fas fa-project-diagram" style="font-size:50px;"></i>
         <h3>Projects</h3>
       </div>
       <div>
-        <i class="far fa-user-circle" style="font-size:50px;"></i>
-        <h3>About Me</h3>
+        <div>
+          <i class="far fa-user-circle" style="font-size:50px;"></i>
+        </div>
+        <div>
+          <button class="labout link"><h3>About Me</h3></button>
+        </div>
       </div>
     </div>
   </section>
  
+ <div class="about" id="about">
+  <section class="contents bg-light">
+    <div class="container">
+      <div class="grid-2">
+        <div class="center">
+            <i class="far fa-user-circle fa-10x"></i>
+        </div>
+        <div class="aboutme">
+          <h3>About Me</h3>
+            <p>I am a third year Physics student at the University of Birmingham interested in Nuclear Physics, Particle Physics and computing. I’m Proficient in
+Python but i am eager to learn more programming languages like java, C and also languages for web development. I am an active team member
+participating in a variety of sporting activities and societies both at home an at University.
+            </p>
+        </div>
+        <div id="here"></div>
+      </div>
+    </div>
+  </section>
+</div>
 
-
+<footer class="center bg-dark">
+    <p>Jack Sanders &copy; 2019</p>
+</footer>
+<!--Load CDN First-->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<!--If CDN Fails, use loacl copy-->
+<script>window.jQuery || document.write('<script src="scripts/jquery-3.4.1.js"><\/script>');</script>
+<script type="text/javascript" src="scripts\showhide.js"
 </body>
 </html>

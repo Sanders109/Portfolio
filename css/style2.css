@@ -32,15 +32,6 @@ body {
 .link:hover {
 	color: #bbb;
 }
-.showcase:hover::after {
-	filter: blur(0px);
-	-webkit-filter: blur(0px);
-}
-
-.showcase:hover .content {
-	filter: blur(2px);
-	-webkit-filter: blur(2px);
-}
 
 .content {
 	position: absolute;
@@ -102,11 +93,12 @@ body {
 .about {
 	display: none;
 }
-/* Small screens*/
+/* Small Screens */
 @media (max-width: 560px) {
 	.showcase::after {
 		height: 50vh;
 	}
+
 	.content {
 		top: 5%;
 		margin-top: 5px;
@@ -114,11 +106,21 @@ body {
 
 	.content .logo {
 		height: 140px;
-		width: 40px;
+		width: 140px;
 	}
 
 	.content .text {
 		display: none;
+	}
+
+	.grid-3,
+	.grid-2 {
+		grid-template-columns: 1fr;
+	}
+
+	.services div {
+		border-bottom: #333 dashed 1px;
+		padding: 1.2rem 1rem;
 	}
 }
 
